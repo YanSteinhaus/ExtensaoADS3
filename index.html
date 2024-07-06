@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jstyle.css">
+    <title>Inserir Produto</title>
+</head>
+
+<body>
+    <header class="cabeco">
+        <h1 class="nomeCabeco">Indie</h1>
+        <div class="logo"><img src="images/IndieHitLogo.png" style="width: 80px; height: 80px"></div>
+
+        <!-- <div class="searchbar"> <i class='bx bx-search-alt-2 bxs'></i> <input class="sb" type="text"></div> -->
+      </header> 
+ <div class="center">  
+  <div class="formCadastro">
+    <div class="tituloInserir"><h1>Inserir Produto</h1></div>
+    <form action="/cadastrar" method="POST" enctype="multipart/form-data">
+        
+      <div class="inputsContainer">
+
+
+       <div class="containerInputs cc">
+        <label class="campoDescricao" for="descricao">Nome:</label>
+        <input class="sb ss" type="text" id="descricao" name="descricao"><br>
+       </div>
+
+
+       <div class="containerInputs cc">
+        <label class="campoDescricao" for="quantidade">Limite de Unidades:</label>
+        <input class="sb se" type="text" id="quantidade" name="quantidade"><br>
+       </div>
+
+
+       <div class="containerInputs cc">
+        <label class="campoDescricao" for="valorunitario">Preço:</label>
+        <input class="sb si" type="text" id="valorunitario" name="valorunitario"><br>
+       </div>
+
+
+       <div class="containerInputs tt">
+        <label class="campoDescricao" for="imagem_produto">Thumbnail:</label>
+        <input class="sb" type="file" id="imagem_produto" name="imagem_produto"><br>
+       </div>
+
+       <div class="containerInputs tt">
+        <label class="campoDescricao" for="arquivo_zip">Pasta com o arquivo do jogo zipado:</label>
+        <input class="sb" type="file" id="arquivo_zip" name="arquivo_zip"><br>
+       </div> 
+      
+       <div class="buttonsb"><button class="btsub" type="submit">Inserir</button></div>
+      </div>
+        
+    </form>
+  </div>
+ </div> 
+</body>
+</html>
